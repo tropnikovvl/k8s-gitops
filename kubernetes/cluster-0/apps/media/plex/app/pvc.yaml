@@ -2,11 +2,10 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: paperless-data-pvc
-  namespace: selfhosted
+  name: plex-cache
 spec:
   accessModes: ["ReadWriteOnce"]
   resources:
     requests:
-      storage: 15Gi
+      storage: 75Gi
   storageClassName: ceph-block
